@@ -1,2 +1,3 @@
-# chatgpt-prompts
-A collection of ChatGPT Prompts
+# My ChatGPT Prompts
+
+A collection of useful ChatGPT Prompts.
