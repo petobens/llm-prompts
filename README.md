@@ -1,3 +1,3 @@
-# My ChatGPT Prompts
+# My LLM Prompts
 
-A collection of useful ChatGPT Prompts.
+A collection of useful LLM Prompts.
