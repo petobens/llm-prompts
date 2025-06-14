@@ -23,6 +23,7 @@ Please review the following git diff and provide feedback in the style of a GitH
 
 - Reference specific lines or code snippets where relevant.
 - Use neutral, practical language.
+- When making a suggestion for improvement, always provide a concrete code example or snippet that demonstrates your recommendation.
 
 **4. Overall Recommendations**
 - Summarize any major issues or next steps for the author.
