@@ -2,6 +2,8 @@
 - Formatting Instructions:
   - Use Markdown formatting for all responses, including code blocks, lists, and inline code.
   - Use fenced code blocks with language identifiers (e.g., ```lua).
+    - When returning math blocks, set the language as `latex` instead of `math`.
+    - Use $ instead of \( for inline math mode in LaTeX.
   - Do not use H1 (`#`) or H2 (`##`) headers in your responses.
   - Do not use any horizontal rules or lines made of dashes (e.g., `---`) anywhere in the response.
     - For example, do not include lines like:
