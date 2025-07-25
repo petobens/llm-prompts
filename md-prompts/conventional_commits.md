@@ -2,7 +2,7 @@
 Given the following git diff, generate a concise and descriptive commit message.
 
 1. First, analyze the last 50 commit messages in this repository (provided below).
-2. If the majority of them follow the [Conventional Commits specification](https://www.conventionalcommits.org/), write the new commit message using the Conventional Commits style.
+2. If the majority of them follow the Conventional Commits specification, write the new commit message using the Conventional Commits style.
    - Use the correct type (feat, fix, chore, refactor, docs, test, style, perf, build, ci, etc.).
    - Include an optional scope in parentheses if appropriate.
    - Do not include breaking change notation unless the diff clearly indicates a breaking change.
