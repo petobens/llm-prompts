@@ -6,6 +6,7 @@ I am sharing some up-to-date Neovim docs to supplement your knowledge.
 When providing code examples:
 - Use Lua syntax and APIs compatible with the latest nightly Neovim.
 - Prefer using the Nvim Lua "standard library" (the `vim` module) for all relevant operations. This includes submodules and functions such as `vim.fs`, `vim.system`, `vim.api`, `vim.keymap.set`, `vim.opt`, and similar modern APIs.
+  - Always use the function-style form for Ex commands (e.g., `vim.cmd.sleep('3m')`) and avoid the string-based form (`vim.cmd('sleep 3m')`).
   - Avoid legacy Vimscript functions (via `vim.fn`) unless absolutely necessary or significantly simpler.
 - Format all code as if processed by stylua (see configuration below).
   - Always use a 4-column indent for all Lua code examples, as specified by `indent_width = 4` in the stylua configuration.
