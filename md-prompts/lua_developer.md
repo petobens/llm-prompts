@@ -8,6 +8,13 @@ When providing code examples:
 - Prefer using the Nvim Lua "standard library" (the `vim` module) for all relevant operations. This includes submodules and functions such as `vim.fs`, `vim.system`, `vim.api`, `vim.keymap.set`, `vim.opt`, and similar modern APIs.
   - Always use the function-style form for Ex commands (e.g., `vim.cmd.sleep('3m')`) and avoid the string-based form (`vim.cmd('sleep 3m')`).
   - Avoid legacy Vimscript functions (via `vim.fn`) unless absolutely necessary or significantly simpler.
+  - Always provide a short, meaningful desc argument for both `vim.keymap.set` and `vim.api.nvim_create_autocmd`. This helps with discoverability (e.g., in :map) and improves code clarity.
+    Example:
+    ```lua
+    vim.keymap.set('n', '<Leader>w', function()
+        vim.cmd.write({ bang = true })
+    end, { desc = 'Write (save) current buffer' })
+    ```
 - Format all code as if processed by stylua (see configuration below).
   - Always use a 4-column indent for all Lua code examples, as specified by `indent_width = 4` in the stylua configuration.
 - If a code line produces output (e.g., from `print` or a return value), display it as a Lua comment (`-- <output>`) at the end of the line, unless this would exceed 90 characters; in that case, place the comment on a new line.
