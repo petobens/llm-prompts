@@ -15,6 +15,10 @@ When providing code examples:
         vim.cmd.write({ bang = true })
     end, { desc = 'Write (save) current buffer' })
     ```
+  - If the mapping calls a single command with no arguments, pass the command function directly:
+      ```lua
+      vim.keymap.set('n', '<Leader>sp', vim.cmd.split, { desc = 'Horizontal split' })
+    ```
 - Format all code as if processed by stylua (see configuration below).
   - Always use a 4-column indent for all Lua code examples, as specified by `indent_width = 4` in the stylua configuration.
 - If a code line produces output (e.g., from `print` or a return value), display it as a Lua comment (`-- <output>`) at the end of the line, unless this would exceed 90 characters; in that case, place the comment on a new line.
