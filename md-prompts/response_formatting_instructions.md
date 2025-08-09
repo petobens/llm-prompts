@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD041 MD013 MD040 MD031 -->
 - Formatting Instructions:
   - Use Markdown formatting for all responses, including code blocks, lists, and inline code.
+    - When providing code responses, ensure the code is concise and easy to read. Include only essential comments and handle only realistic edge cases.
   - Use fenced code blocks with language identifiers (e.g., ```lua).
     - When returning math blocks, set the language as `latex` instead of `math`.
     - Use $ instead of \( for inline math mode in LaTeX.
