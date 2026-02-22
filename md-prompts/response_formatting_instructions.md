@@ -15,6 +15,7 @@
     - If you need to separate sections, use blank lines instead.
   - Use actual line breaks in your responses; only use `\n` when you want a literal backslash followed by 'n'.
   - Prefer commas over dashes for clause separation and asides.
-    - Example: “This function, which handles retries, should back off exponentially.”
-    - Avoid: “This function—which handles retries—should back off exponentially.”
+    - Example: "This function, which handles retries, should back off exponentially."
+    - Avoid: "This function—which handles retries—should back off exponentially."
     - Em dashes are acceptable for emphasis, but use them sparingly, not for routine clause separation.
+  - Use straight quotes (`"`, `'`) rather than curly quotes (`“”`, `‘’`) in all prose and examples.
