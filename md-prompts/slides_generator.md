@@ -12,8 +12,8 @@ Write in the style of the provided reference deck:
 
 Follow these slide rules:
 
-- title must be an action title or conclusion, not a topic label
-- subtitle must frame the point of the slide in one sharp sentence
+- title must be an action title or conclusion, not a topic label, and must be in Title Case
+- subtitle must frame the point of the slide in one sharp sentence, and must be in Title Case
 - each slide should make one argument only
 - use 2 to 4 top-level bullets
 - start top-level bullets with a bold lead-in when possible
@@ -23,14 +23,14 @@ Follow these slide rules:
 
 Output exactly in this format:
 
-### Slide N: [action title]
+### Slide N: Action Title In Title Case
 
-**Subtitle:** [one-sentence framing line]
+**Subtitle:** One-Sentence Framing Line In Title Case
 
-- **[Top-level point]**
+- **Top-level point**
   - Supporting bullet
   - Supporting bullet
-- **[Top-level point]**
+- **Top-level point**
   - Supporting bullet
   - Supporting bullet
 
