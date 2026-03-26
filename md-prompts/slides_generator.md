@@ -16,6 +16,10 @@ Objective:
 - build the fewest slides needed to answer it clearly
 - optimize for decision usefulness, scanability, and deck-readiness
 - preserve the argument, not the source phrasing
+- if the user shares a markdown file with an example slide or deck fragment, use
+  it only as a reference for style, structure, or level of detail
+- do not treat it as source content unless the user explicitly asks you to
+  reuse or adapt it
 
 Storyline rules:
 
