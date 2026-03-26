@@ -30,7 +30,11 @@ Slide rules:
 
 - each slide must make one argument only
 - the title must state the takeaway, not the topic, and be in Title Case
-- the subtitle must state the slide's business relevance, in Title Case
+- add a subtitle only when it clarifies scope, relevance, or ambiguity the
+  title alone cannot carry
+- if a subtitle is used, keep it short
+- prefer a single-sentence takeaway title over splitting meaning across title
+  and subtitle when possible
 - include only content that proves, explains, qualifies, or operationalizes the
   takeaway
 - use MECE grouping where possible
@@ -45,16 +49,18 @@ Preferred defaults:
 - use 2 to 4 top-level bullets
 - start top-level bullets with a bold lead-in when possible
 - add 1 to 3 supporting bullets only when they deepen the point
-- keep titles and subtitles short, push nuance into bullets
+- keep titles self-sufficient and concise, but allow them to run longer when
+  needed to carry the full takeaway without a subtitle, push nuance into bullets
 - use clear decision buckets such as: why it matters, what is driving it, what
   we should do, what we measure, who owns it, what could fail
 
-Output in exactly this format:
+Output in this format, omitting the subtitle line when unneeded:
 
 ```md
 ### Slide N: Action Title In Title Case
 
-**Subtitle:** One-Sentence Framing Line In Title Case
+[Optional, Omit Entirely If Unneeded]
+**Subtitle:** One-Sentence Clarifying Line When Needed
 
 - **Top-level point**
   - Supporting bullet
