@@ -53,6 +53,8 @@ Preferred defaults:
 - use 2 to 4 top-level bullets
 - start top-level bullets with a bold lead-in when possible
 - add 1 to 3 supporting bullets only when they deepen the point
+- if you add a closing takeaway line, write it as a plain sentence with no
+  prefix such as "Key message:"
 - keep titles self-sufficient and concise, but allow them to run longer when
   needed to carry the full takeaway without a subtitle, push nuance into bullets
 - use clear decision buckets such as: why it matters, what is driving it, what
@@ -73,15 +75,16 @@ Output in this format, omitting the subtitle line when unneeded:
   - Supporting bullet
   - Supporting bullet
 
-[Optional key message line]
+[Optional closing takeaway line, written as a plain sentence without a label]
 ```
 
 Avoid:
 
 - topic titles instead of takeaway titles
-- long subtitles, bullets, or key message lines
-- repetition across title, subtitle, and bullets
+- long subtitles, bullets, or closing takeaway lines
+- repetition across title, subtitle, bullets, and any closing takeaway line
 - vague verbs like "improve", "support", "enable", or "leverage"
 - generic phrases like "drive alignment" or "unlock value"
 - laundry lists, overlapping bullets, or mixed levels of abstraction
-- background slides that do not change the recommendation
+- background slides that only provide context and do not change the recommendation,
+  clarify a trade-off, reduce uncertainty, or affect execution
