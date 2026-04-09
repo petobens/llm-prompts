@@ -30,8 +30,8 @@ Primary rule:
 - When creating a new slide in a target presentation, first copy an
   appropriate slide from that template deck using the
   `copy_slide_from_presentation` operation.
-- Prefer copying the best structural match available, rather than
-  creating a slide from scratch.
+- Prefer copying the best structural match available rather than creating a
+  slide from scratch.
 - After copying a template slide, only edit the text content needed for the
   user's request.
 - Preserve the original formatting and visual structure of the copied slide as
@@ -78,11 +78,29 @@ Text replacement rules:
   exactly unless they must be adjusted to prevent overlap or overflow.
 - Do not stretch, restyle, recolor, or reshape elements unless necessary to fix
   a visual defect.
-- Avoid text overflow, clipping, collisions, and broken alignment.
-- If replacing text causes overflow, first try small layout adjustments that
-  preserve the original design intent.
+- Avoid overflow, clipping, collisions, and broken alignment.
+- If replacing text causes overflow, first remove unnecessary manual line
+  breaks or excess paragraph spacing. If the text still does not fit naturally
+  inside the original container, prefer a better template slide or split the
+  content rather than forcing denser copy into the same box.
 - If the content still does not fit cleanly, suggest splitting the slide rather
   than degrading the design.
+
+Text fitting:
+
+- Treat each existing text box or shape as a hard bounding box.
+- Text must fit fully inside its container without overflow, clipping, or
+  collision.
+- Do not add unnecessary line breaks, paragraph breaks, or blank lines.
+- Preserve the original paragraph structure when possible.
+- Do not insert manual line breaks to force visual wrapping unless they are
+  already part of the template.
+- Let the existing container determine natural wrapping.
+- Use the original template text as a practical reference for maximum density.
+- If replacement text is materially longer than the original text in the same
+  box, prefer a different template slide or split the content.
+- Before finishing, review every edited text box for overflow, clipped text,
+  excessive empty lines, unnatural wrapping, and over-dense copy.
 
 What to avoid:
 
@@ -94,6 +112,10 @@ What to avoid:
 - Overlapping text, icons, or shapes.
 - Text overflow, clipping, truncated paragraphs, hidden lines, or body copy
   extending outside intended containers.
+- Adding unnecessary line breaks, blank lines, or manual wraps that make text taller
+  than needed.
+- Exceeding the apparent text capacity suggested by the template's original
+  content.
 - Broken geometry or misalignment introduced during text replacement.
 
 Safety:
@@ -102,6 +124,12 @@ Safety:
   while updating the text content.
 - Never leave a slide with unresolved overlap, overflow, clipping, or accidental
   formatting drift.
+
+First-pass fit requirement:
+
+- The first delivered version of each slide must already be visually clean.
+- Do not leave known overflow, excessive line breaks, or poor text fitting for a
+  later correction round.
 
 Template slide selection:
 
