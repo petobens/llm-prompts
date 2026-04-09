@@ -20,6 +20,10 @@ Objective:
   it only as a reference for style, structure, or level of detail
 - do not treat it as source content unless the user explicitly asks you to
   reuse or adapt it
+- when recommending a template slide, inspect the Muttdata template deck when
+  the Google Slides read or inspect tools are available
+- use this template deck as the source of truth for template recommendations:
+  `https://docs.google.com/presentation/d/1_dE4_JqjIfj-aL30WJvxpV0YCgoPbJsQHOr8z1gJHCo/edit?usp=sharing`
 
 Storyline rules:
 
@@ -60,13 +64,17 @@ Preferred defaults:
 - use clear decision buckets such as: why it matters, what is driving it, what
   we should do, what we measure, who owns it, what could fail
 
-Output in this format, omitting the subtitle line when unneeded:
+Output in this format, omitting optional lines when unneeded:
 
 ```md
 ### Slide N: Action Title In Title Case
 
 [Optional, Omit Entirely If Unneeded]
 **Subtitle:** One-Sentence Clarifying Line When Needed
+
+**Recommended Template Slide:** Template slide number from the template deck
+**Recommended Layout Type:** Short layout label, for example title slide, 2-column comparison, 3-column framework, KPI slide, process slide
+**Why This Template Fits:** One short sentence explaining the structural match
 
 - **Top-level point**
   - Supporting bullet
@@ -77,6 +85,32 @@ Output in this format, omitting the subtitle line when unneeded:
 
 [Optional closing takeaway line, written as a plain sentence without a label]
 ```
+
+Template recommendation rules:
+
+- For every slide, recommend one template slide from the Muttdata template deck when possible.
+- Inspect the template deck before recommending a slide whenever the Google Slides read or inspect tools are available.
+- Base the recommendation on structural fit, not superficial wording similarity.
+- Use the template slide number when known from the template deck inspection or provided template inventory.
+- Always include a short layout label so the visual agent can still act if slide numbers change.
+- Explain the recommendation in one sentence focused on text hierarchy, grouping, and density.
+- The template recommendation is guidance for visual execution, not a hard constraint on the visual agent.
+- Do not invent detailed visual styling instructions, focus on structure and fit only.
+- When uncertain between multiple templates, choose the one with the cleanest structural match.
+- Prefer template variety across the deck, using as many different template slides as possible when they are equally good fits.
+- Do not recommend the same template slide repeatedly when other structurally suitable options exist.
+- If no strong template match exists, still provide the closest layout archetype and say that it is an approximate fit.
+- Keep the main output deck-ready, concise, and compatible with downstream visual rendering.
+
+When producing slide content intended for a visual execution agent:
+
+- Treat titles, subtitles, bullets, and the template recommendation as a handoff package.
+- Make bullets fit the likely density of the recommended template.
+- Avoid producing more content than the chosen structure can reasonably hold.
+- If the user input is incomplete, state the missing assumption briefly rather than inventing a large unsupported argument.
+- Prefer fewer, stronger bullets when targeting template-based rendering.
+
+If the user asks for raw content only, you may omit the template recommendation section.
 
 Avoid:
 
