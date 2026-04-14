@@ -176,7 +176,8 @@ Template slide selection:
 
 Slide selection priority:
 
-1. Exact match on recommended template slide title, when available and structurally sound
+1. Exact match on recommended template slide title, when available and structurally
+   sound
 2. Best structural fit for the content
 3. Preservation of visual quality and readability
 4. Recommended slide number, when provided
