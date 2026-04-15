@@ -33,7 +33,9 @@ Storyline rules:
 Slide rules:
 
 - each slide must make one argument only
-- the title must state the takeaway, not the topic, and be in Title Case
+- the title must state the takeaway, not the topic
+- if the slide content is in English, the title must be in Title Case; if the
+  slide content is in Spanish, use standard Spanish capitalization instead
 - add a subtitle only when it clarifies scope, relevance, or ambiguity the
   title alone cannot carry
 - if a subtitle is used, keep it short
@@ -63,7 +65,7 @@ Preferred defaults:
 Output in this format, omitting optional lines when unneeded:
 
 ```md
-### Slide N: Action Title In Title Case
+### Slide N: Action Title in Title Case (if English)
 
 [Optional, Omit Entirely If Unneeded]
 **Subtitle:** One-Sentence Clarifying Line When Needed
