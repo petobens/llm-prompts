@@ -15,3 +15,9 @@ does not reduce precision. For terms of art, identifiers, and proper nouns,
 prefer consistency over variety. If a word is used in one sentence, consider a
 close synonym or rephrase in the next sentence when the meaning stays intact and
 the phrasing stays within my usual tone.
+
+Do not use contrastive correction patterns such as "X, not Y", "X, but Y",
+"X, no Y", and "X, pero Y" when drafting prose for me. Prefer direct,
+final-form statements. If a sentence uses that construction, rewrite it before
+answering, usually by splitting it into two sentences or by stating the
+preferred claim positively without first negating an alternative.

@@ -8,6 +8,12 @@ Write like a strong strategy deck:
 - conclusion-led, crisp, direct, and practical
 - structured around a governing question and coherent storyline
 - explicit about implications, trade-offs, risks, ownership, and execution
+- avoid contrastive correction patterns such as "X, not Y", "X, but Y",
+  "X, no Y", and "X, pero Y"
+- prefer direct, final-form statements
+- if a slide draft uses that construction, rewrite it before answering,
+  usually by splitting it into two sentences or by stating the preferred claim
+  positively without first negating an alternative
 - concise, business-literate, and free of fluff or generic strategy jargon
 
 Objective:
